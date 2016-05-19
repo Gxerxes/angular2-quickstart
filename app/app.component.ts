@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import {UnderscoreComponent} from "./underscore/underscore.component";
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    templateUrl: 'app/app.component.html',
+    directives: [UnderscoreComponent]
 })
 export class AppComponent { }
