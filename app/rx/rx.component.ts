@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from "rxjs/Observable";
 import {Observer} from "rxjs/Observer";
+import * as Rx from 'rxjs/Rx';
 
 @Component({
     selector: 'my-app-rx',
@@ -13,7 +14,7 @@ export class RxComponent implements OnInit{
     ngOnInit() {
         console.log('Rx test');
         console.clear();
-        this.demo3();
+        this.debounceDemo();
     }
 
     demo1() {
@@ -71,5 +72,34 @@ export class RxComponent implements OnInit{
         setTimeout(() => {
             disposable3.unsubscribe();
         }, 5000);
+    }
+
+    debounceDemo() {
+        let times = [
+            { value: 0, time: 100 },
+            { value: 1, time: 600 },
+            { value: 2, time: 400 },
+            { value: 3, time: 700 },
+            { value: 4, time: 200 }
+        ];
+
+        // Delay each item by time and project value;
+        let source = Rx.Observable.from(times)
+            .flatMap(function (item) {
+                return Rx.Observable
+                    .of(item.value)
+                    .delay(item.time);
+            }).debounceTime(500);
+
+        let subscription = source.subscribe(
+            function (x) {
+                console.log('Next: %s', x);
+            },
+            function (err) {
+                console.log('Error: %s', err);
+            },
+            function () {
+                console.log('Completed');
+            });
     }
 }
