@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import {TrigonometryComponent} from "./trigonometry/trigonometry.component";
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    templateUrl: 'app/app.component.html',
+    directives: [TrigonometryComponent]
 })
 export class AppComponent { }
