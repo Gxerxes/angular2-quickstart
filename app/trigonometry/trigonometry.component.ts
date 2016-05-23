@@ -36,8 +36,6 @@ export class TrigonometryComponent implements OnInit, AfterViewInit {
 
         this.render();
 
-
-        requestAnimationFrame(() => this.render());
     }
 
     render() {
@@ -45,11 +43,13 @@ export class TrigonometryComponent implements OnInit, AfterViewInit {
 
         this.context.clearRect(0, 0, this.width, this.height);
         this.context.beginPath();
-        this.context.arc(this.centerX, this.centerY, 50, 0, Math.PI * 2, false);
+        this.context.arc(this.centerX, y, 50, 0, Math.PI * 2, false);
 
         this.context.fill();
 
         this.angle += this.speed;
+
+        requestAnimationFrame(() => this.render());
 
     }
 }
