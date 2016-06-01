@@ -1,5 +1,14 @@
-<div>My First Angular 2 App</div>
+<!--<div>My First Angular 2 App</div>-->
 <!--<my-app-underscore></my-app-underscore>-->
 <!--<my-app-rx></my-app-rx>-->
 <!--<my-app-flex></my-app-flex>-->
-<my-app-layout></my-app-layout>
+<div style="position: relative;">
+    <div style="position: fixed; top: 0; bottom: 80%; left: 20%; right: 0; background: gray;">Header</div>
+    <div style="position: fixed; top: 0; bottom: 0; left: 0; right: 80%; background: yellow;">Sidebar</div>
+    <div style="position: fixed; top: 20%; bottom: 0; left: 20%; right: 0; background: white; overflow: auto;">
+        <my-app-layout></my-app-layout>
+    </div>
+    <div style="position: fixed; bottom: 0; width: 100%; height: auto; text-align: center;">
+        <span>Footer</span>
+    </div>
+</div>
