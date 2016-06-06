@@ -1,2 +1,14 @@
-<h1>My First Angular 2 App</h1>
-<my-app-trigonometry></my-app-trigonometry>
+<div>
+    <h1>Math</h1>
+
+    <div class="list-group-item col-md-3">
+        <a [routerLink]="['Fractal']" class="list-group-item">Fractal</a>
+        <a [routerLink]="['Matrix']" class="list-group-item">Matrix</a>
+        <a [routerLink]="['Trigonometry']" class="list-group-item">Trigonometry</a>
+        <a [routerLink]="['LineIntersection']" class="list-group-item">LineIntersection</a>
+    </div>
+
+    <div class="col-md-9">
+        <router-outlet></router-outlet>
+    </div>
+</div>
