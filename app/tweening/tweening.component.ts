@@ -1,10 +1,13 @@
+/**
+ * Created by LeonL64 on 6/6/2016.
+ */
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
-    selector: 'my-app-line-intersection',
-    templateUrl: 'app/line-intersection/line-intersection.component.html'
+    selector: 'my-app-tweening',
+    templateUrl: 'app/tweening/tweening.component.html'
 })
-export class LineIntersectionComponent implements OnInit, AfterViewInit {
+export class TweeningComponent implements OnInit, AfterViewInit {
     context: CanvasRenderingContext2D;
     width: any;
     height: any;
