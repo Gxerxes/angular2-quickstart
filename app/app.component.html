@@ -1,16 +1,58 @@
-<div class="container">
-    <h1>Math</h1>
+<!--<div class="container">-->
+    <!--<h1>Math</h1>-->
 
-    <div class="list-group-item col-md-3">
-        <a [routerLink]="['Fractal']" class="list-group-item">Fractal</a>
-        <a [routerLink]="['Matrix']" class="list-group-item">Matrix</a>
-        <a [routerLink]="['Trigonometry']" class="list-group-item">Trigonometry</a>
-        <a [routerLink]="['LineIntersection']" class="list-group-item">LineIntersection</a>
-        <a [routerLink]="['Tweening']" class="list-group-item">Tweening</a>
-        <a [routerLink]="['Easing']" class="list-group-item">Easing</a>
-    </div>
+    <!--<div class="list-group-item col-md-3">-->
+        <!--<a [routerLink]="['Fractal']" class="list-group-item">Fractal</a>-->
+        <!--<a [routerLink]="['Matrix']" class="list-group-item">Matrix</a>-->
+        <!--<a [routerLink]="['Trigonometry']" class="list-group-item">Trigonometry</a>-->
+        <!--<a [routerLink]="['LineIntersection']" class="list-group-item">LineIntersection</a>-->
+        <!--<a [routerLink]="['Tweening']" class="list-group-item">Tweening</a>-->
+        <!--<a [routerLink]="['Easing']" class="list-group-item">Easing</a>-->
+    <!--</div>-->
 
-    <div class="col-md-9">
+    <!--<div class="col-md-9">-->
+        <!--<router-outlet></router-outlet>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<md-list>-->
+    <!--<md-list-item class="md-2-line"><a [routerLink]="['Fractal']" class="list-group-item">Fractal</a></md-list-item>-->
+    <!--<md-list-item><a [routerLink]="['Matrix']" class="list-group-item">Matrix</a></md-list-item>-->
+    <!--<md-list-item><a [routerLink]="['Trigonometry']" class="list-group-item">Trigonometry</a></md-list-item>-->
+    <!--<md-list-item><a [routerLink]="['LineIntersection']" class="list-group-item">LineIntersection</a></md-list-item>-->
+    <!--<md-list-item><a [routerLink]="['Tweening']" class="list-group-item">Tweening</a></md-list-item>-->
+    <!--<md-list-item><a [routerLink]="['Easing']" class="list-group-item">Easing</a></md-list-item>-->
+<!--</md-list>-->
+<!--<div class="col-md-9">-->
+    <!--<router-outlet></router-outlet>-->
+<!--</div>-->
+
+
+<md-sidenav-layout>
+    <md-sidenav #sidenav mode="side" class="app-sidenav">
+        <md-list class="app-list">
+            <md-list-item class="md-2-line"><a [routerLink]="['Fractal']" class="list-group-item">Fractal</a></md-list-item>
+            <md-list-item><a [routerLink]="['Matrix']" class="list-group-item">Matrix</a></md-list-item>
+            <md-list-item><a [routerLink]="['Trigonometry']" class="list-group-item">Trigonometry</a></md-list-item>
+            <md-list-item><a [routerLink]="['LineIntersection']" class="list-group-item">LineIntersection</a></md-list-item>
+            <md-list-item><a [routerLink]="['Tweening']" class="list-group-item">Tweening</a></md-list-item>
+            <md-list-item><a [routerLink]="['Easing']" class="list-group-item">Easing</a></md-list-item>
+        </md-list>
+    </md-sidenav>
+
+    <md-toolbar color="primary">
+        <button class="app-icon-button" (click)="sidenav.toggle()">
+            <i class="material-icons">menu</i>
+        </button>
+    </md-toolbar>
+
+    <!--<md-sidenav align="end">-->
+        <!--Right-side panel along the left-side sidenav.-->
+    <!--</md-sidenav>-->
+
+    <div class="app-content">
+        Main content panel
         <router-outlet></router-outlet>
     </div>
-</div>
+
+</md-sidenav-layout>
+

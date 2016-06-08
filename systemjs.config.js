@@ -4,7 +4,8 @@
     'app':                        'app', // 'dist',
     'rxjs':                       'node_modules/rxjs',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
-    '@angular':                   'node_modules/@angular'
+    '@angular':                   'node_modules/@angular',
+    '@angular2-material':         'node_modules/@angular2-material'
   };
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
@@ -12,6 +13,18 @@
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { defaultExtension: 'js' },
   };
+
+  var materialPkgs = [
+      'core',
+      'toolbar',
+      'icon',
+      'button',
+      'sidenav',
+      'list',
+      'card',
+      'input'
+  ]
+
   var packageNames = [
     '@angular/common',
     '@angular/compiler',
@@ -28,6 +41,11 @@
   packageNames.forEach(function(pkgName) {
     packages[pkgName] = { main: 'index.js', defaultExtension: 'js' };
   });
+  
+  materialPkgs.forEach(function (pkg) {
+    packages['@angular2-material/' + pkg] = {main: pkg + 'js'};
+  });
+  
   var config = {
     map: map,
     packages: packages
