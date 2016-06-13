@@ -1,0 +1,20 @@
+{
+  "name": "angular2-quickstart",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Gxerxes <xuninglee@163.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Gxerxes/angular2-quickstart",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
+}
