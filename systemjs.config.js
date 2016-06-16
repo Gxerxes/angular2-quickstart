@@ -22,7 +22,8 @@
       'sidenav',
       'list',
       'card',
-      'input'
+      'input',
+      'checkbox'
   ]
 
   var packageNames = [
@@ -43,7 +44,7 @@
   });
   
   materialPkgs.forEach(function (pkg) {
-    packages['@angular2-material/' + pkg] = {main: pkg + 'js'};
+    packages['@angular2-material/' + pkg] = {main: pkg };
   });
   
   var config = {

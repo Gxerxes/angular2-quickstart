@@ -27,16 +27,23 @@
 <!--</div>-->
 
 
-<md-sidenav-layout>
-    <md-sidenav #sidenav mode="side" class="app-sidenav">
-        <md-list class="app-list">
-            <md-list-item class="md-2-line"><a [routerLink]="['Fractal']" class="list-group-item">Fractal</a></md-list-item>
+<md-sidenav-layout fullscreen>
+    <md-sidenav #sidenav>
+        <md-nav-list>
+            <md-icon md-list-icon>book</md-icon>
+            <a md-list-item [routerLink]="['Fractal']" (click)="sidenav.close()">Fractal</a>
+            <a md-list-item [routerLink]="['Matrix']" (click)="sidenav.close()">Matrix</a>
+            <a md-list-item [routerLink]="['Trigonometry']" (click)="sidenav.close()">Trigonometry</a>
+            <a md-list-item [routerLink]="['LineIntersection']" (click)="sidenav.close()">LineIntersection</a>
+            <a md-list-item [routerLink]="['Tweening']" (click)="sidenav.close()">Tweening</a>  
+            <a md-list-item [routerLink]="['Easing']" (click)="sidenav.close()">Easing</a>  
+            <!--<md-list-item class="md-2-line"><a [routerLink]="['Fractal']" class="list-group-item">Fractal</a></md-list-item>
             <md-list-item><a [routerLink]="['Matrix']" class="list-group-item">Matrix</a></md-list-item>
             <md-list-item><a [routerLink]="['Trigonometry']" class="list-group-item">Trigonometry</a></md-list-item>
             <md-list-item><a [routerLink]="['LineIntersection']" class="list-group-item">LineIntersection</a></md-list-item>
             <md-list-item><a [routerLink]="['Tweening']" class="list-group-item">Tweening</a></md-list-item>
-            <md-list-item><a [routerLink]="['Easing']" class="list-group-item">Easing</a></md-list-item>
-        </md-list>
+            <md-list-item><a [routerLink]="['Easing']" class="list-group-item">Easing</a></md-list-item>-->
+        </md-nav-list>
     </md-sidenav>
 
     <md-toolbar color="primary">

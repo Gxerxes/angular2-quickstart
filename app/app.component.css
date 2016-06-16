@@ -2,7 +2,9 @@
     padding: 20px;
     position: relative;
     bottom: 0;
-    overflow-y: auto;
+    right: 0;
+    /*bottom: 0;
+    overflow-y: auto;*/
 }
 
 .app-sidenav {
@@ -24,5 +26,27 @@
     min-width: 0;
     padding: 0;
     text-align: left;
+    text-decoration: none;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.secondary {
+    color: rgba(0, 0, 0, .54);
+}
+
+md-sidenav-layout {
+    background: rgba(0, 0, 0, .03);
+
+}
+
+md-sidenav {
+    width: 300px;
+}
+
+a {
     text-decoration: none;
 }
