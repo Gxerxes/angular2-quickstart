@@ -55,3 +55,5 @@ typings/
 app/**/*.js
 app/**/*.js.map
 semantic/
+bower_components/
+dist/
