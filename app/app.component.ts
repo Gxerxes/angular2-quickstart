@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import {PopupComponent} from "./popup/popup.component";
+import {TransclusionComponent} from "./transclusion/transclusion.component";
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    templateUrl: 'app/app.component.html',
+    directives:[PopupComponent, TransclusionComponent]
 })
 export class AppComponent { }
