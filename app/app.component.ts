@@ -11,6 +11,7 @@ import {MD_SIDENAV_DIRECTIVES} from "@angular2-material/sidenav/sidenav";
 import {MD_TOOLBAR_DIRECTIVES} from "@angular2-material/toolbar/toolbar";
 import { MdAnchor, MdButton } from '@angular2-material/button';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
+import {FindPrimeComponent} from "./algorithm/find-prime.component"
 
 @Component({
     selector: 'my-app',
@@ -25,6 +26,7 @@ import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
     new Route({path: '/line-intersection', component: LineIntersectionComponent, name:'LineIntersection' }),
     new Route({path: '/matrix', component: MatrixComponent, name:'Matrix' }),
     new Route({path: '/tweening', component: TweeningComponent, name:'Tweening' }),
-    new Route({path: '/easing', component: EasingComponent, name:'Easing' })
+    new Route({path: '/easing', component: EasingComponent, name:'Easing' }),
+    new Route({path: '/algorithm', component: FindPrimeComponent, name:'FindPrime' })
 ])
 export class AppComponent { }
