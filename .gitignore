@@ -56,3 +56,4 @@ app/**/*.js
 app/**/*.js.map
 semantic/
 dist/
+bower_components/
