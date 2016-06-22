@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {PopupComponent} from "./popup/popup.component";
 import {TransclusionComponent} from "./transclusion/transclusion.component";
 
-declare var NProgress: any;
+import * as NProgress from 'nprogress';
+//declare var NProgress: any;
 
 @Component({
     selector: 'my-app',

@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="bower_components/semantic/dist/semantic.css">
         <link rel="stylesheet" href="bower_components/nprogress/nprogress.css">
+        <link rel="stylesheet" href="bower_components/pnotify/dist/pnotify.css">
+        <link rel="stylesheet" href="bower_components/pnotify/dist/pnotify.buttons.css">
+        <link rel="stylesheet" href="bower_components/pnotify/dist/pnotify.brighttheme.css">
 
         <!-- 1. Load libraries -->
         <!-- Polyfill(s) for older browsers -->
@@ -15,13 +18,39 @@
         <script src="node_modules/reflect-metadata/Reflect.js"></script>
         <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-        <script src="bower_components/nprogress/nprogress.js"></script>
+        <script src="bower_components/requirejs/require.js"></script>
+
+        <!--<script src="bower_components/jquery/dist/jquery.js"></script>-->
+        <!--<script src="bower_components/nprogress/nprogress.js"></script>-->
+        <script src="bower_components/pnotify/dist/pnotify.js"></script>
+        <script src="bower_components/pnotify/dist/pnotify.buttons.js"></script>
+        <!--<script src="bower_components/pnotify/dist/pnotify.desktop.js"></script>-->
+
+        <script>
+//            requirejs(["bower_components/pnotify/dist/pnotify", "bower_components/pnotify/dist/pnotify.desktop", "bower_components/pnotify/dist/pnotify.nonblock"], function(PNotify) {
+//                console.log('require pnotify test');
+//                console.log(PNotify);
+//                //PNotify.desktop.permission();
+//                new PNotify({
+//                    title: 'Desktop Notice',
+//                    text: 'If you\'ve given me permission, I\'ll appear as a desktop notification. If you haven\'t, I\'ll still appear as a regular PNotify notice.',
+//                    desktop: {
+//                        desktop: true
+//                    },
+//                    nonblock: {
+//                        nonblock: true
+//                    }
+//                });
+//            });
+        </script>
 
         <!-- 2. Configure SystemJS -->
         <script src="systemjs.config.js"></script>
         <script>
             System.import('app').catch(function(err){ console.error(err); });
         </script>
+
+
     </head>
 
     <!-- 3. Display the application -->
