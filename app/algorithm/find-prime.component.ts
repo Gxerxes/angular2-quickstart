@@ -1,17 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import {UtilsService} from "../utils/utils.service";
 
 @Component({
     moduleId: module.id,
     selector: 'my-app-find-prime',
-    templateUrl: './find-prime.component.html'
+    templateUrl: './find-prime.component.html',
+    providers: [UtilsService]
 })
 export class FindPrimeComponent implements OnInit {
-    constructor() { }
+    constructor(private _utilsService: UtilsService) {
+
+    }
 
     ngOnInit() { 
         console.log(this.getPrime(1000));
-        console.log(this.generateRandomArray(10));
-        console.log(this.generateRandomArrayES6(10, 10));
+        console.log(this._utilsService.getRandomIntArray(10));
+        console.log(this._utilsService.getRandomIntArray(10));
+        console.log(this._utilsService.getRandomIntArray(10));
     }
 
     isPrime(num: number): boolean {
@@ -39,22 +44,6 @@ export class FindPrimeComponent implements OnInit {
         return { Prime: arrPrime, Count: count };
     }
 
-    generateRandomArray(num: number): Array<number> {
 
-        let arr = [];
-        
-        for (let index = 0; index < num; index++) {
-            arr.push(Math.round(Math.random() * index));
-        }
-
-        return arr;
-    }
-
-    generateRandomArrayES6(length, max) {
-        //let randomArray = [];
-        let randomArray = [...new Array(length)].map((_, i) => Math.round(Math.random() * max));
-
-        return randomArray;
-    }
 
 }
