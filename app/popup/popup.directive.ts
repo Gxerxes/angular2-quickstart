@@ -36,7 +36,7 @@ export class PopupDirective implements OnInit {
             text: 'I wish someone would click me.'
         });
         notice.get().css('cursor', 'pointer').click(function(e) {
-            if ($(e.target).is('.ui-pnotify-closer *, .ui-pnotify-sticker *')) return;
+            if (jQuery(e.target).is('.ui-pnotify-closer *, .ui-pnotify-sticker *')) return;
             notice.update({
                 type: 'success',
                 text: 'Yay, you clicked me!<div style="text-align: center;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Happy_smiley_face.png/240px-Happy_smiley_face.png" /></div>'
