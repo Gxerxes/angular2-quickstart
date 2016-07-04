@@ -13,6 +13,8 @@
     'ng2-select':                 'node_modules/ng2-select',
     'dragula':                    'node_modules/dragula/dist',
     'ng2-dragula':                'node_modules/ng2-dragula'
+    // 'angular2-modal':             'node_modules/angular2-modal',
+    // 'angular2-modal/platform-browser': 'node_modules/angular2-modal/platform-browser'
   };
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
@@ -25,6 +27,8 @@
     'ng2-select':                 { main: 'ng2-select.js', defaultExtention: 'js' },
     'dragula':                    { main: 'dragula.js', defaultExtention: 'js' },
     'ng2-dragula':                { main: 'ng2-dragula.js', defaultExtention: 'js'}
+    // 'angular2-modal':             { main: 'index.js', defaultExtension: 'js'},
+    // 'angular2-modal/platform-browser': {main: 'index.js', defaultExtension: 'js'}
   };
   var packageNames = [
     '@angular/common',

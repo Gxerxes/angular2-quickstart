@@ -1,13 +1,17 @@
 import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
 // import jQuery from 'jquery';
 import * as FC from 'FC';
+import {BS_VIEW_PROVIDERS, MODAL_DIRECTVES} from "ng2-bootstrap/ng2-bootstrap";
+import {CORE_DIRECTIVES} from "@angular/common";
 
 declare var jQuery: any;
 declare var FC: any;
 @Component({
     moduleId: module.id,
     selector: 'full-canlendar',
-    templateUrl: 'fullcalendar.component.html'
+    templateUrl: 'fullcalendar.component.html',
+    viewProviders: [BS_VIEW_PROVIDERS],
+    directives: [MODAL_DIRECTVES, CORE_DIRECTIVES]
 })
 export class FullCalendarComponent implements OnInit, AfterViewInit {
     el: ElementRef;
