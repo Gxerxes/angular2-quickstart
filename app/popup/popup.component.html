@@ -9,3 +9,9 @@
 
     <i class="alarm icon" popup message="Clicked the alarm icon"></i>
 </div>
+
+<div>
+    <button (click)="createPush()">Create Push</button>
+    <button (click)="createPop()">Create Pop</button>
+    <simple-notifications [options]="options"></simple-notifications>
+</div>

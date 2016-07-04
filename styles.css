@@ -11,3 +11,27 @@ body {
  * See https://github.com/angular/angular.io/blob/master/public/docs/_examples/styles.css
  * for the full set of master styles used by the documentation samples
  */
+
+body {
+    background-color: #fff;
+}
+@media screen  and (max-width: 960px){
+    body {
+        background-color: red;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-color: orange;
+    }
+}
+@media screen and (max-width: 550px) {
+    body {
+        background-color: yellow;
+    }
+}
+@media screen and (max-width: 320px) {
+    body {
+        background-color: green;
+    }
+}

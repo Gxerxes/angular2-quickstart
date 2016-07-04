@@ -3,25 +3,32 @@
         <title>Angular 2 QuickStart</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
+
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="bower_components/semantic/dist/semantic.css">
         <link rel="stylesheet" href="bower_components/nprogress/nprogress.css">
         <link rel="stylesheet" href="bower_components/pnotify/dist/pnotify.css">
         <link rel="stylesheet" href="bower_components/pnotify/dist/pnotify.buttons.css">
         <link rel="stylesheet" href="bower_components/pnotify/dist/pnotify.brighttheme.css">
+        <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css">
+        <link rel="stylesheet" href="node_modules/ng2-select/components/css/ng2-select.css">
+        <link rel="stylesheet" href="styles.css">
 
         <!-- 1. Load libraries -->
         <!-- Polyfill(s) for older browsers -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+
         <script src="node_modules/es6-shim/es6-shim.min.js"></script>
 
         <script src="node_modules/zone.js/dist/zone.js"></script>
         <script src="node_modules/reflect-metadata/Reflect.js"></script>
         <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-        <script src="bower_components/requirejs/require.js"></script>
+        <!--<script src="bower_components/requirejs/require.js"></script>-->
+        <script src="node_modules/moment/moment.js"></script>
 
-        <script src="bower_components/jquery/dist/jquery.js"></script>
+
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
         <!--<script src="bower_components/nprogress/nprogress.js"></script>-->
@@ -29,6 +36,7 @@
         <script src="bower_components/pnotify/dist/pnotify.buttons.js"></script>
         <!--<script src="bower_components/pnotify/dist/pnotify.desktop.js"></script>-->
         <script src="node_modules/ng2-bootstrap/bundles/ng2-bootstrap.min.js"></script>
+        <script src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
 
         <script>
 //            requirejs(["bower_components/pnotify/dist/pnotify", "bower_components/pnotify/dist/pnotify.desktop", "bower_components/pnotify/dist/pnotify.nonblock"], function(PNotify) {

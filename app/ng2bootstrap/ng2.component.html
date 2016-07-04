@@ -2,3 +2,20 @@
     <label>Or use custom triggers, like focus: </label>
     <input type="text" value="Click me!" tooltip="See? Now click away..."  tooltipTrigger="focus" tooltipPlacement="bottom" class="form-control" />
 </div>
+
+<div style="width: 300px; margin-bottom: 20px;">
+    <ng-select [items]="items"></ng-select>
+</div>
+
+<div>
+    <div class="wrapper">
+        <div class="container" [dragula]='"first-bag"'>
+            <div>Drop/drop item 1</div>
+        </div>
+
+        <div class="container" [dragula]='"first-bag"'>
+            <div>Drag/drop item 2</div>
+        </div>
+    </div>
+
+</div>

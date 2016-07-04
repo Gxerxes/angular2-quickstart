@@ -1,8 +1,9 @@
 import { Directive, OnInit, ElementRef } from '@angular/core';
 
-import * as PNotify from 'pnotify';
+//import * as PNotify from 'pnotify';
 //import * as PNotify from 'pnotify.buttons';
-import jQuery from 'jquery';
+// import jQuery from 'jquery';
+declare var jQuery: any;
 
 declare var PNotify: any;
 

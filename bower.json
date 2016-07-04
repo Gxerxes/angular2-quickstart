@@ -23,6 +23,8 @@
     "requirejs": "^2.2.0",
     "nprogress": "^0.2.0",
     "semantic": "semantic-ui#^2.1.8",
-    "three.js": "^0.77.0"
+    "three.js": "^0.77.0",
+    "normalize-css": "normalize.css#^4.1.1",
+    "fullcalendar": "^2.8.0"
   }
 }
