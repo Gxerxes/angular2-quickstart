@@ -11,3 +11,12 @@ export class ComponentNameComponent implements OnInit {
     ngOnInit() { }
 
 }
+
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class ServiceNameService {
+
+    constructor() { }
+
+}
