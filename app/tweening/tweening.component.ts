@@ -25,7 +25,7 @@ export class TweeningComponent implements OnInit, AfterViewInit {
     // @ViewChild("myCanvas") myCanvas: ElementRef;
 
     ngOnInit() {
-        (<any>window).System.import('app/css3d_periodictable.js').then(comp => {
+        (<any>window).System.import('assets/js/css3d_periodictable.js').then(comp => {
 
         }).catch(function (err) {
             console.log(err)
