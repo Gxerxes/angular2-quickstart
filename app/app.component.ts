@@ -12,6 +12,7 @@ import {MD_TOOLBAR_DIRECTIVES} from "@angular2-material/toolbar/toolbar";
 import { MdAnchor, MdButton } from '@angular2-material/button';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import {FindPrimeComponent} from "./algorithm/find-prime.component"
+import {WorldMapComponent} from "./worldmap/world-map.component";
 
 @Component({
     selector: 'my-app',
@@ -27,6 +28,7 @@ import {FindPrimeComponent} from "./algorithm/find-prime.component"
     new Route({path: '/matrix', component: MatrixComponent, name:'Matrix' }),
     new Route({path: '/tweening', component: TweeningComponent, name:'Tweening' }),
     new Route({path: '/easing', component: EasingComponent, name:'Easing' }),
-    new Route({path: '/algorithm', component: FindPrimeComponent, name:'FindPrime' })
+    new Route({path: '/algorithm', component: FindPrimeComponent, name:'FindPrime' }),
+    new Route({path: '/worldmap', component: WorldMapComponent, name:'WorldMap' })
 ])
 export class AppComponent { }
