@@ -2,10 +2,12 @@
  * Created by LeonL64 on 6/6/2016.
  */
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import {RestTestComponent} from "../_demo/rest-test.component";
 
 @Component({
     selector: 'my-app-easing',
-    templateUrl: 'app/easing/easing.component.html'
+    templateUrl: 'app/easing/easing.component.html',
+    directives: [RestTestComponent]
 })
 export class EasingComponent implements OnInit, AfterViewInit {
     context: CanvasRenderingContext2D;
