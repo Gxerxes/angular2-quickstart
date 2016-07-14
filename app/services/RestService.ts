@@ -90,6 +90,12 @@ export function BaseUrl(url: string) {
     }
 }
 
+export function TestUrl(url: string) {
+   return function (Target: any) {
+       console.log(url);  
+   } 
+}
+
 /**
  * Set default headers for every method of the RESTClient
  * @param {Object} headers - deafult headers in a key-value pair

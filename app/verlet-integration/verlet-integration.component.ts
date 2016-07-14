@@ -1,15 +1,10 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, ViewEncapsulation } from '@angular/core';
-
-declare var THREE: any;
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
-    moduleId: module.id,
-    selector: 'my-app-tweening',
-    styleUrls: ['tweening.component.css'],
-    templateUrl: 'tweening.component.html',
-    encapsulation: ViewEncapsulation.None
+    selector: 'my-app-verlet-integration',
+    templateUrl: 'app/verlet-integration/verlet-integration.component.html'
 })
-export class TweeningComponent implements OnInit, AfterViewInit {
+export class VerletIntegrationComponent implements OnInit, AfterViewInit {
     context: CanvasRenderingContext2D;
     width: any;
     height: any;
@@ -18,7 +13,6 @@ export class TweeningComponent implements OnInit, AfterViewInit {
     offset: any;
     speed: any;
     angle: any;
-
 
     @ViewChild("myCanvas") myCanvas: ElementRef;
 
@@ -29,15 +23,15 @@ export class TweeningComponent implements OnInit, AfterViewInit {
         let canvas = this.myCanvas.nativeElement;
         this.context = canvas.getContext("2d");
         this.width = canvas.width = window.innerWidth;
-        this.height = canvas.height = window.innerHeight;
-        
+        this.height = canvas.height = window.innerHeight - 84;
+
         this.render();
 
     }
 
     render() {
+
         requestAnimationFrame(() => this.render());
 
     }
-    
 }

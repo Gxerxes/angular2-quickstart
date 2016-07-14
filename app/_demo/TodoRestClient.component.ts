@@ -1,10 +1,11 @@
 import {Request, Response, Http} from '@angular/http';
-import {RESTClient, GET, PUT, POST, DELETE, BaseUrl, Headers, DefaultHeaders, Path, Body, Query} from '../services/RestService';
+import {RESTClient, GET, PUT, POST, DELETE, BaseUrl, Headers, DefaultHeaders, Path, Body, Query, TestUrl} from '../services/RestService';
 import {Component, Injectable} from "@angular/core";
 import {Observable} from "rxjs/Rx";
 
 @Injectable()
 @BaseUrl('http://jsonplaceholder.typicode.com')
+@TestUrl('test')
 @DefaultHeaders({
     'Accept': 'application/json',
     'Content-Type': 'application/json'
@@ -17,9 +18,11 @@ export class TodoRestClient extends RESTClient {
     //     // }
     // }
 
-    // protected responseInterceptor(req: Response) {
-    //     // do sg with responses
-    // }
+    protected responseInterceptor(rep: Response): any {
+        // do sg with responses
+        console.log(rep);
+        return rep;
+    }
 
     public constructor(protected http: Http) {
         super(http);

@@ -23,7 +23,7 @@ export class LineIntersectionComponent implements OnInit, AfterViewInit {
         let canvas = this.myCanvas.nativeElement;
         this.context = canvas.getContext("2d");
         this.width = canvas.width = window.innerWidth;
-        this.height = canvas.height = window.innerHeight;
+        this.height = canvas.height = window.innerHeight - 84;
 
         this.render();
 

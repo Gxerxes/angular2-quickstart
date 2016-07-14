@@ -195,8 +195,9 @@ function init() {
     }
     //
     renderer = new THREE.CSS3DRenderer();
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( window.innerWidth, window.innerHeight - 100 );
     renderer.domElement.style.position = 'absolute';
+    renderer.domElement.style.backgroundColor  = 'black';
     document.getElementById( 'container' ).appendChild( renderer.domElement );
     //
     controls = new THREE.TrackballControls( camera, renderer.domElement );

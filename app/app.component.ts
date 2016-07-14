@@ -13,6 +13,8 @@ import { MdAnchor, MdButton } from '@angular2-material/button';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import {FindPrimeComponent} from "./algorithm/find-prime.component"
 import {WorldMapComponent} from "./worldmap/world-map.component";
+import {VerletIntegrationComponent} from "./verlet-integration/verlet-integration.component";
+import {ThreePeriodicComponent} from "./three-periodic/three-periodic.component";
 
 @Component({
     selector: 'my-app',
@@ -23,12 +25,14 @@ import {WorldMapComponent} from "./worldmap/world-map.component";
 })
 @RouteConfig([
     new Route({path: '/fractal', component: FractalComponent, name:'Fractal', useAsDefault: true}),
+    new Route({path: '/three-periodic', component: ThreePeriodicComponent, name:'ThreePeriodic' }),
     new Route({path: '/trigonometry', component: TrigonometryComponent, name:'Trigonometry' }),
     new Route({path: '/line-intersection', component: LineIntersectionComponent, name:'LineIntersection' }),
     new Route({path: '/matrix', component: MatrixComponent, name:'Matrix' }),
     new Route({path: '/tweening', component: TweeningComponent, name:'Tweening' }),
     new Route({path: '/easing', component: EasingComponent, name:'Easing' }),
     new Route({path: '/algorithm', component: FindPrimeComponent, name:'FindPrime' }),
-    new Route({path: '/worldmap', component: WorldMapComponent, name:'WorldMap' })
+    new Route({path: '/worldmap', component: WorldMapComponent, name:'WorldMap' }),
+    new Route({path: '/verlet-integration', component: VerletIntegrationComponent, name:'VerletIntegration' })
 ])
 export class AppComponent { }
