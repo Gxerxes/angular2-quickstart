@@ -22,6 +22,7 @@
     "@angular/router-deprecated": "2.0.0-rc.2",
     "@angular/upgrade": "2.0.0-rc.4",
     "angular2-busy": "^0.2.6-rc.4",
+    "angular2-google-maps": "^0.12.0",
     "angular2-in-memory-web-api": "0.0.14",
     "angular2-modal": "^1.0.8",
     "angular2-notifications": "^0.1.58",

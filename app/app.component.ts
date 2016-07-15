@@ -15,6 +15,7 @@ import {FindPrimeComponent} from "./algorithm/find-prime.component"
 import {WorldMapComponent} from "./worldmap/world-map.component";
 import {VerletIntegrationComponent} from "./verlet-integration/verlet-integration.component";
 import {ThreePeriodicComponent} from "./three-periodic/three-periodic.component";
+import {GoogleMapsComponent} from "./google-maps/google-maps.component";
 
 @Component({
     selector: 'my-app',
@@ -33,6 +34,7 @@ import {ThreePeriodicComponent} from "./three-periodic/three-periodic.component"
     new Route({path: '/easing', component: EasingComponent, name:'Easing' }),
     new Route({path: '/algorithm', component: FindPrimeComponent, name:'FindPrime' }),
     new Route({path: '/worldmap', component: WorldMapComponent, name:'WorldMap' }),
+    new Route({path: '/google-maps', component: GoogleMapsComponent, name:'GoogleMaps' }),
     new Route({path: '/verlet-integration', component: VerletIntegrationComponent, name:'VerletIntegration' })
 ])
 export class AppComponent { }

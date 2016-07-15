@@ -7,7 +7,8 @@
     '@angular':                   'node_modules/@angular',
     '@angular2-material':         'node_modules/@angular2-material',
     "ng2-dropdown":               "node_modules/ng2-dropdown",
-    'angular2-busy':              "node_modules/angular2-busy/build/src"
+    'angular2-busy':              "node_modules/angular2-busy/build/src",
+    'angular2-google-maps':       "node_modules/angular2-google-maps"
     // 'ng2-sweetalert2':            'node_modules/ng2-sweetalert2'
   };
   // packages tells the System loader how to load when no filename and/or no extension
@@ -16,7 +17,8 @@
     'rxjs':                       { main: 'Rx.js', defaultExtension: 'js' },
     'angular2-in-memory-web-api': { defaultExtension: 'js' },
     "ng2-dropdown":               { main: "index.js", defaultExtension: "js" },
-    'angular2-busy':              { main: "index.js", defaultExtension: "js" }
+    'angular2-busy':              { main: "index.js", defaultExtension: "js" },
+    'angular2-google-maps/core':       { main: "index.js", defaultExtension: "js" }
     // 'ng2-sweetalert2':            { main: 'index.js',  defaultExtension: 'js'}
   };
 
