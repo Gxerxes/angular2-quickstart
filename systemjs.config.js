@@ -8,7 +8,8 @@
     '@angular2-material':         'node_modules/@angular2-material',
     "ng2-dropdown":               "node_modules/ng2-dropdown",
     'angular2-busy':              "node_modules/angular2-busy/build/src",
-    'angular2-google-maps':       "node_modules/angular2-google-maps"
+    'angular2-google-maps':       "node_modules/angular2-google-maps",
+    'angular2TextMask':           "node_modules/angular2-text-mask/dist/angular2TextMask.js"
     // 'ng2-sweetalert2':            'node_modules/ng2-sweetalert2'
   };
   // packages tells the System loader how to load when no filename and/or no extension

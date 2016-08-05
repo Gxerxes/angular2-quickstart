@@ -36,6 +36,8 @@
     "sweetalert2": "^4.0.8",
     "datamaps": "^0.5.7",
     "lodash": "^4.13.1",
-    "slickgrid-bootstrap": "*"
+    "slickgrid-bootstrap": "*",
+    "font-awesome": "^4.6.3",
+    "kendo-ui": "kendo-ui-core#^2016.2.727"
   }
 }
