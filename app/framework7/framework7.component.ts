@@ -43,7 +43,7 @@ export class Framework7Component implements AfterContentInit, OnInit {
     }
 
     ngOnInit() {
-        SystemJS.import('bower_components/Framework7/dist/js/my-app.js').then(comp => {
+        SystemJS.import('assets/js/my-app.js').then(comp => {
             console.log(comp);
         }).catch(function (err) {
             console.log(err)
