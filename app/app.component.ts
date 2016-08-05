@@ -16,6 +16,7 @@ import {WorldMapComponent} from "./worldmap/world-map.component";
 import {VerletIntegrationComponent} from "./verlet-integration/verlet-integration.component";
 import {ThreePeriodicComponent} from "./three-periodic/three-periodic.component";
 import {GoogleMapsComponent} from "./google-maps/google-maps.component";
+import {Framework7Component} from "./framework7/framework7.component";
 
 @Component({
     selector: 'my-app',
@@ -27,6 +28,7 @@ import {GoogleMapsComponent} from "./google-maps/google-maps.component";
 @RouteConfig([
     new Route({path: '/fractal', component: FractalComponent, name:'Fractal', useAsDefault: true}),
     new Route({path: '/three-periodic', component: ThreePeriodicComponent, name:'ThreePeriodic' }),
+    new Route({path: '/framework7', component: Framework7Component, name:'Framework7' }),
     new Route({path: '/trigonometry', component: TrigonometryComponent, name:'Trigonometry' }),
     new Route({path: '/line-intersection', component: LineIntersectionComponent, name:'LineIntersection' }),
     new Route({path: '/matrix', component: MatrixComponent, name:'Matrix' }),

@@ -8,14 +8,14 @@ import {MD_CARD_DIRECTIVES} from "@angular2-material/card/card";
 import {DROPDOWN_DIRECTIVES} from "ng2-dropdown/index";
 import {BusyService, BusyDirective} from "angular2-busy/index";
 import {Subscription} from 'rxjs';
-import MaskedInput from "angular2TextMask";
+// import MaskedInput from "angular2TextMask";
 
 
 
 @Component({
     selector: 'my-app-matrix',
     templateUrl: 'app/matrix/matrix.component.html',
-    directives: [MD_BUTTON_DIRECTIVES, MD_CARD_DIRECTIVES, DROPDOWN_DIRECTIVES, BusyDirective, MaskedInput],
+    directives: [MD_BUTTON_DIRECTIVES, MD_CARD_DIRECTIVES, DROPDOWN_DIRECTIVES, BusyDirective],
     providers: [BusyService]
 })
 export class MatrixComponent implements OnInit, AfterViewInit {

@@ -17,6 +17,7 @@ export class LineIntersectionComponent implements OnInit, AfterViewInit {
     @ViewChild("myCanvas") myCanvas: ElementRef;
 
     ngOnInit() {
+
     }
 
     ngAfterViewInit() {

@@ -38,6 +38,7 @@
     "lodash": "^4.13.1",
     "slickgrid-bootstrap": "*",
     "font-awesome": "^4.6.3",
-    "kendo-ui": "kendo-ui-core#^2016.2.727"
+    "kendo-ui": "kendo-ui-core#^2016.2.727",
+    "Framework7": "framework7#^1.4.2"
   }
 }

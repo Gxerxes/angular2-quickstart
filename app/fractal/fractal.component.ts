@@ -29,7 +29,6 @@ export class FractalComponent implements OnInit, AfterViewInit {
         this.height = canvas.height = window.innerHeight;
 
         this.render();
-
     }
 
     render() {
