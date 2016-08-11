@@ -42,6 +42,7 @@
     "Framework7": "framework7#^1.4.2",
     "jquery-mobile-bower": "^1.4.5",
     "jquery-mobile": "^1.4.5",
-    "mobile-angular-ui": "^1.2.1"
+    "mobile-angular-ui": "^1.2.1",
+    "hammerjs": "^2.0.8"
   }
 }

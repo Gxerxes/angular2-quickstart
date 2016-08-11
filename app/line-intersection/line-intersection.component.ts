@@ -2,7 +2,8 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angula
 
 @Component({
     selector: 'my-app-line-intersection',
-    templateUrl: 'app/line-intersection/line-intersection.component.html'
+    templateUrl: 'app/line-intersection/line-intersection.component.html',
+    directives: []
 })
 export class LineIntersectionComponent implements OnInit, AfterViewInit {
     context: CanvasRenderingContext2D;
