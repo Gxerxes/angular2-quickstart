@@ -33,7 +33,7 @@
       'card',
       'input',
       'checkbox'
-  ]
+  ];
 
   var packageNames = [
     '@angular/common',

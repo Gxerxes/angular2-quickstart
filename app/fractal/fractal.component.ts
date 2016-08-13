@@ -2,10 +2,12 @@
  * Created by LeonL64 on 6/6/2016.
  */
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import {ngBookRepeat} from "../directives/ngbookrepeat.directive";
 
 @Component({
     selector: 'my-app-fractal',
-    templateUrl: 'app/fractal/fractal.component.html'
+    templateUrl: 'app/fractal/fractal.component.html',
+    directives: [ngBookRepeat]
 })
 export class FractalComponent implements OnInit, AfterViewInit {
     context: CanvasRenderingContext2D;
@@ -17,9 +19,33 @@ export class FractalComponent implements OnInit, AfterViewInit {
     speed: any;
     angle: any;
 
+    people: any[];
+
+    constructor() {
+        this.people = [
+            {name: 'Joe', age: 10},
+            {name: 'Patrick', age: 21},
+            {name: 'Melissa', age: 12},
+            {name: 'Kate', age: 19}
+        ];
+    }
+
+    remove(p) {
+        let idx: number = this.people.indexOf(p);
+        this.people.splice(idx, 1);
+        return false;
+    }
+
+    add(name, age) {
+        this.people.push({name: name.value, age: age.value});
+        name.value = '';
+        age.value = '';
+    }
+
     @ViewChild("myCanvas") myCanvas: ElementRef;
 
     ngOnInit() {
+        
     }
 
     ngAfterViewInit() {

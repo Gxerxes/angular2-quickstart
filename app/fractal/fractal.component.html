@@ -8,4 +8,27 @@
 <h1 class="animated infinite wobble">fractal wobble</h1>
 <h1 class="animated infinite jello">fractal jello</h1>
 <h1 class="animated infinite bounceInDown">fractal bounceInDown</h1>
+<div>
+ <ul>
+  <li *ngBookRepeat="let p of people">
+   {{p.name}} is {{p.age}}
+   <a href (click)="remove(p)">Remove</a>
+  </li>
+ </ul>
+</div>
+
+<div>
+    <div>
+        <label>Name</label>
+        <input type="text" #name placeholder="Name">
+    </div>
+    <div>
+        <label>Age</label>
+        <input type="text" #age placeholder="Age">
+    </div>
+    <div>
+        <button (click)="add(name, age)">Add</button>
+    </div>
+</div>
+
 <canvas #myCanvas id="canvas"></canvas>
