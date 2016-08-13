@@ -39,6 +39,7 @@
     "slickgrid-bootstrap": "*",
     "font-awesome": "^4.6.3",
     "kendo-ui": "kendo-ui-core#^2016.2.727",
-    "Framework7": "framework7#^1.4.2"
+    "Framework7": "framework7#^1.4.2",
+    "mobile-angular-ui": "^1.2.1"
   }
 }
